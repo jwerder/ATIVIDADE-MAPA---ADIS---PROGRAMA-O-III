@@ -10,8 +10,11 @@ class Pessoa extends classeBanco
     public $nome = '';
     public $email = '';
 
-    public function __construct( $post )
+    public function __construct( $post = null )
     {
+        foreach ( $post as $k => $v ) {
+            $this->{$k} = $v;
+        }
         parent::__construct( 'unicesumar_mapa' );
         $id = $this->salvar( $post );
         $this->setId( $id );
