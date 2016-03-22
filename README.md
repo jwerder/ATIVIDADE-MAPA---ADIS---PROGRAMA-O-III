@@ -1,4 +1,4 @@
-## ATIVIDADE-MAPA---ADIS---PROGRAMA-O-II
+## ATIVIDADE-MAPA-ADIS-PROGRAMACAO-III
 
 Construa uma classe Pessoa no arquivo classePessoa.php que estende a classe Banco (classeBanco.php) com os seguintes atributos:
 * id (privado)
