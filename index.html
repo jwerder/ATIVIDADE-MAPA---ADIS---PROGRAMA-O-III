@@ -4,14 +4,36 @@
         <title>Atividade Mapa</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/cadastro.css">
     </head>
     <body>
-        <h2>Cadastro de pessoa:</h2>
-        <form action="cadastrarPessoa.php" method="POST">
-            CPF: <input type="text" name="cpf" maxlength="11"/><br><br> 
-            Nome: <input type="text" name="nome" maxlength="50"/><br><br>
-            E-mail: <input type="text" name="email" maxlength="50"/><br><br>
-            <input type="submit" value="Enviar" />
-        </form>
+
+        <div class="container">
+
+            <form id="contactform" class="rounded" method="post" action="cadastrarPessoa.php">
+                <h3>Cadastro de pessoa:</h3>
+                <div class="field">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" class="input" name="cpf" maxlength="11" id="cpf" />
+                    <p class="hint">Insira seu CPF</p>
+                </div>
+
+                <div class="field">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="input" name="nome" id="nome" />
+                    <p class="hint">Insira seu nome</p>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="text" class="input" name="email" id="email" />
+                    <p class="hint">Insira seu email</p>
+                </div>
+
+                <input type="submit" class="button" value="Enviar" />
+            </form>
+
+        </div>
+
     </body>
 </html>

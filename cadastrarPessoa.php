@@ -11,7 +11,7 @@ $linhas = $pessoa->listar( array( "*" ) );
         <title>Lista de Cadastros</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/css" src="css/style.css"></script>
+        <link rel="stylesheet" href="css/lista.css">
     </head>
 
     <body>
